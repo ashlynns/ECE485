@@ -28,14 +28,15 @@ function plot_gaus(x1, x2, cov_c1, mean_c1, cov_c2, mean_c2, class1, class2, tit
     vpa(c1_c2sym, 3)
     
     
-    %figure()
+    figure()
     title(tit)
+    xlabel('x1')
+    ylabel('x2')
     hold on
-    plot(class1(:,1), class1(:,2), 'k+', 'Linewidth', 1.5)
-    plot(class2(:,1), class2(:,2), 'ko', 'Linewidth', 1.5)
-    legend('Class1', 'Class2')
+    plot(class1(:,1), class1(:,2), 'k+', 'Linewidth', 1)
+    plot(class2(:,1), class2(:,2), 'ko', 'Linewidth', 1)
+    contour(x1, x2, c1_c2, [0 0],'Linewidth', 3);
     c1_2c = c_plot(class1);
     c2_2c = c_plot(class2);
-    contour(x1, x2, c1_c2, [0 0]);
-    %fplot(c1_c2_sol_)
+    
 end

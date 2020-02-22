@@ -18,27 +18,39 @@ set3 = mvnrnd(mu,sigma_set3, 1000);
 
 %2b
 figure()
+xlabel('x1')
+ylabel('x2')
 plot(set1(:,1), set1(:,2), 'k+', 'Linewidth', 1.5)
 title('2b - Generated Data Set 1')
 
 figure()
+xlabel('x1')
+ylabel('x2')
 plot(set2(:,1), set2(:,2), 'k+', 'Linewidth', 1.5)
 title('2b - Generated Data Set 2')
 
 figure()
+xlabel('x1')
+ylabel('x2')
 plot(set3(:,1), set3(:,2), 'k+', 'Linewidth', 1.5)
 title('2b - Generated Data Set 3')
 
 %2c
 figure()
+xlabel('x1')
+ylabel('x2')
 title('2c -Generated Data Set 1')
 ds1_2c = c_plot(set1)
 
 figure()
+xlabel('x1')
+ylabel('x2')
 title('2c -Generated Data Set 2')
 ds2_2c = c_plot(set2)
 
 figure()
+xlabel('x1')
+ylabel('x2')
 title('2c -Generated Data Set 3')
 ds3_2c = c_plot(set3)
 
